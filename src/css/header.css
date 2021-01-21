@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 620px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+
+.header-title {
+  display: flex;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}

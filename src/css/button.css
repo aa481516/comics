@@ -1,0 +1,76 @@
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.buttons>button {
+  font-family: 'Saucer BB';
+  font-size: 20px;
+  background: #000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 5px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button:hover {
+  color: #000;
+}
+
+button::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  display: block;
+}
+
+button[class^="btn"]::after {
+  transition: all 0.3s ease;
+}
+
+button[class^="btn"]:hover::after {
+  transition: all 0.3s ease-out;
+}
+
+button.btn_random::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+}
+
+button.btn_random:hover::after {
+  transform: scale(1, 1);
+}
+
+button.btn_forward::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+}
+
+button.btn_forward:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+button.btn_backward::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+}
+
+button.btn_backward:hover::after {
+  transform: skewX(45deg) scale(1, 1);
+}

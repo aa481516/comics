@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 992px) {
+  .buttons>button {
+    padding: 4px 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .buttons>button {
+    padding: 3px 1px;
+    font-size: 12px;
+  }
+  .header {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .header-title {
+    font-size: 40px;
+  }
+}
